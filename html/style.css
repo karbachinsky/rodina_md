@@ -1,0 +1,1179 @@
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('font/raleway/raleway-light-webfont.eot');
+    src: url('font/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-light-webfont.woff') format('woff'),
+         url('font/raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('font/raleway/raleway-semibold-webfont.eot');
+    src: url('font/raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-semibold-webfont.woff') format('woff'),
+         url('font/raleway/raleway-semibold-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('font/raleway/raleway-regular-webfont.eot');
+    src: url('font/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-regular-webfont.woff') format('woff'),
+         url('font/raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-regular-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('font/raleway/raleway-extrabold-webfont.eot');
+    src: url('font/raleway/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-extrabold-webfont.woff') format('woff'),
+         url('font/raleway/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;	
+}
+
+#background1 {
+	background-image: url(../img/background.png);
+	height: 100%;
+	display: none;
+}
+#slide1{
+	height: 100%;
+	background: url(../img/table.png) no-repeat 50% 0;
+}
+#device1{
+	height: 456px;
+	width: 530px;
+	background: url(../img/mac.png) no-repeat 50% 40%;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -265px;
+	padding: 0;
+}
+#background2 {
+	background-image: url(../img/background2.png);
+	height: 100%;
+	display: none;
+}
+#slide2{
+	height: 100%;
+	background: url(../img/rack.png) no-repeat 50% 0;
+}
+#device2{
+	height: 344px;
+	width: 570px;
+	background: url(../img/tele.png) no-repeat 50% 40%;
+	position: absolute;
+	top: 240px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 0;
+}
+#background3 {
+	background-image: url(../img/background3.png);
+	height: 100%;
+	display: none;
+}
+#slide3{
+	height: 100%;
+	background: url(../img/cinema.png) no-repeat 50% 0;
+}
+#device3{
+	height: 623px;
+	width: 934px;
+	background: url(../img/canvas.png) no-repeat 50% 40%;
+	position: absolute;
+	top: 62px;
+	left: 50%;
+	margin-left: -468px;
+	padding: 0;
+}
+#background4{
+	background-image: url(../img/background4.png);
+	height: 100%;
+	display: none;
+}
+#slide4{
+	height: 100%;
+	background: url(../img/sofa.png) no-repeat 50% 0;
+}
+#device4{
+	height: 359px;
+	width: 584px;
+	background: url(../img/macbook.png) no-repeat 50% 40%;
+	position: absolute;
+	top: 340px;
+	left: 50%;
+	margin-left: -292px;
+	padding: 0;
+}
+#big{
+	font-size: 1.75em;
+	margin-top: 125px;
+}
+#skills{
+	list-style:none;
+	padding: 20px;
+	margin: 0;
+}
+#skills li{
+	display: inline;
+	float: center;
+	padding: 15px;
+	margin: 0;
+}
+#text-section {
+	position: relative;
+	text-align: center;
+	margin-top: 73px;
+	font-family: 'ralewaylight';
+	z-index: 100;
+	font-size: 1em;
+	text-transform: uppercase; 
+	letter-spacing: 0.175em;
+	text-align: center;
+	line-height: 3em;
+	font-weight: lighter; 
+}
+#accent{
+	font-size: 1.60em;
+	font-weight: bold;
+}
+.low{
+	text-transform: lowercase;
+}
+#small{
+	text-transform: lowercase;
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+#backgroundworks{
+	background-image: url(../img/backgroundworks.png);
+	min-height: 100%;
+	background-attachment: fixed;
+	/*display: none;*/
+}
+#container{
+	width: 66%;
+	margin: 0 auto;
+	padding: 30px;
+}
+.description {
+	position: absolute;
+	text-align: center;
+	padding: 30% 0;
+	font-family: 'ralewaylight';
+	z-index: 100;
+	font-size: 1.5em;
+	text-transform: uppercase; 
+	letter-spacing: 0.175em;
+	text-align: center;
+	line-height: 2em;
+	font-weight: lighter;
+	color: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+}
+.textlight{
+	text-transform: none;
+	font-size: 0.8em;
+}
+.line{
+	border-bottom: 3px solid #fff;
+	margin: 0 15%;
+	padding-bottom: 6%;
+}
+/*
+.work{
+	width: 33%;
+	height:408px;
+	margin: 0;
+	padding: 10px;
+	display: inline;
+}
+*/
+.work{
+	float: left;
+	width: 31.17%;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #fff;
+	margin: 1%;
+	min-width: 250px;
+}
+
+
+/*
+#first:hover{
+	background-image: url(../img/noxact.png);
+	border: 1px solid #910035;
+}
+*/
+.work-img {
+	width: 100%;
+}
+
+/*#second{
+	background-image: url(../img/jellypas.png);
+	border: 1px solid #fff;
+	margin: 15px;
+	padding: 15px;
+	height: 379px;
+}
+#third{
+	background-image: url(../img/freepas.png);
+	border: 1px solid #fff;
+	margin: 15px;
+	padding: 15px;
+	height: 379px;
+}
+#forth{
+	background-image: url(../img/lightpas.png);
+	border: 1px solid #fff;
+	margin: 15px;
+	padding: 15px;
+	height: 379px;
+}
+#fifth{
+	background-image: url(../img/middlepas.png);
+	border: 1px solid #fff;
+	margin: 15px;
+	padding: 15px;
+	height: 379px;
+}
+#sixth{
+	background-image: url(../img/vikuppas.png);
+	border: 1px solid #fff;
+	margin: 15px;
+	padding: 15px;
+	height: 379px;
+}*/
+
+/* header*/
+
+
+#header{
+	margin: 0 auto;
+	background: #ffffff;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	/*display: none;*/
+}
+#logo{
+	position: absolute;
+	bottom: 10px;
+	left: 15%;
+}
+#menu{
+	list-style:none;
+	float: right;
+	padding: 0;
+	margin-right: 15%;
+}
+#menu li{
+	float:left;
+	font: 1.7em 'ralewaylight';
+	text-transform: uppercase;
+}	
+#menu a{
+	color: #666667;
+	display:block;
+	height:60px;
+	line-height:56px;
+	padding:0px 60px 0px 0px;
+	text-decoration:none;
+}
+#menu a:hover{
+	color: #000;
+	font-family:'ralewayregular';
+}
+.circle{
+	background: url(../img/circle1.png) 4px 6px no-repeat;
+	margin-top: 20px;
+}
+.circle:hover{
+	background: url(../img/circle1hover.png) no-repeat;
+	margin-top: 22px;
+}
+#menu a.hover{
+	background: url(../img/circle1hover.png) no-repeat;
+	margin-top: 25px;
+}
+.clear {
+	clear: both;
+}
+.mouse{
+	position: relative;
+	width: 15%;
+	bottom: 20%;
+	margin: 0 auto;
+}
+.scrolltext{
+	font-family: 'ralewaylight';
+	z-index: 10000;
+	font-size: 1.3em;
+	text-transform: none; 
+	letter-spacing: 0.175em;
+	float: left;
+	margin-top: 25%;
+	left: 0;
+	width: 100%;
+	color: #fff;
+}
+.scroll{
+	float: left;
+	padding: 4%;
+}
+
+
+/* works pages*/
+
+
+#workheader{
+	background: #ffffff;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	border-bottom: 5px solid #5d4d76;
+	margin: 0;
+	z-index: 10000;
+}
+.back{
+	position: absolute;
+	margin-left: 15%;
+	font: 1.7em 'ralewaylight';
+	text-transform: uppercase;
+}
+.back:hover{
+	color: #000
+	font-weight: bold;
+}
+#worksslider{
+	list-style:none;
+	float: right;
+	padding: 0;
+	margin-right: 15%;
+}
+#worksslider li{
+	float:left;
+	font: 1.7em 'ralewaylight';
+	text-transform: uppercase;
+}	
+#worksslider a{
+	color: #5d4d76;
+	display:block;
+	height:60px;
+	line-height:56px;
+	padding:0px 0px 0px 60px;
+	text-decoration:none;
+}
+#worksslider a:hover{
+	color: #000;
+	font-family:'ralewayregular';
+	
+}
+
+/* be-ready middle*/
+
+
+#backgroundm1{
+	background-image: url(../img/backgroundmiddle.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1bm{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+	margin-top: 85px;
+}
+#middle1{
+	background: url(../img/middle1.png) no-repeat;
+	height: 557px;
+	margin-right: 0px;
+	position: relative;
+	background-position: right;
+}
+#textbm{
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #5d4d76;
+	width: 400px;
+	text-align: justify;
+}
+#titlebm{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #3c3300;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #5d4d76;
+}
+/*#borderleftbm{
+	border-left: 5px solid #5d4d76;
+	margin: 0;
+	padding: 0 30px;
+}*/
+
+#loup1bm{
+	background-image: url(../img/middleloup1.png);
+	height: 271px;
+	width: 270px;
+	position: absolute;
+	top: 200px;
+	left: 460px;
+}
+#container2bm{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+}
+#middle2{
+	background: url(../img/middle2.png) no-repeat;
+	margin-left: 50px;
+	height: 989px;
+	position: relative;
+}
+#text2bm{
+	text-align: justify;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #5d4d76;
+	width: 290px;
+}
+
+/*#borderrightbm{
+	border-right: 5px solid #5d4d76;
+	margin: 0;
+	padding: 0 30px;
+}*/
+#loup2bm{
+	background-image: url(../img/middleloup2.png);
+	height: 210px;
+	width: 211px;
+	position: absolute;
+	top: 0px;
+	left: 470px;
+}
+#loup3bm{
+	background-image: url(../img/middleloup3.png);
+	height: 315px;
+	width: 316px;
+	position: absolute;
+	top: 500px;
+	left: -50px;
+}
+#loup4bm{
+	background-image: url(../img/middleloup4.png);
+	height: 250px;
+	width: 251px;
+	position: absolute;
+	top: 700px;
+	left: 750px;
+}
+#container3bm{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 110px;
+}
+#middle3{
+	background: url(../img/middle3.png) no-repeat;
+	height:672px;
+	position: relative;
+	margin: auto;
+	background-position: 50% 0;
+}
+#text3bm{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #5d4d76;
+}
+/*#borderbottombm{
+	background-color: #5d4d76;
+	height: 5px;
+	width: 590px;
+	padding: 0;
+	margin: 30px auto;
+}*/
+.sign{
+	margin-top: 40px;
+	position: relative;
+	text-align: center;
+	padding: 0;
+	font-family: 'ralewaylight';
+	z-index: 100;
+	font-size: 0.9em;
+	letter-spacing: 0.175em;
+	line-height: 1.5em;
+	color: #5d4d76;
+}
+
+/*be-ready light*/
+
+#backgroundlight{
+	background-image: url(../img/backgroundlight.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1bl{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+	margin-top: 85px;
+}
+#light1{
+	background: url(../img/light1.png) no-repeat;
+	height: 557px;
+	background-position: right;
+	position: relative;
+}
+
+#textbl{
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #7c6b01;
+	width: 450px;
+	text-align: justify;
+}
+#titlebl{
+	font-family:'ralewaysemibold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #012532;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #ceb202;
+}
+/*#borderleftbl{
+	border-left: 5px solid #7c6b01;
+	margin: 0;
+	padding: 0 30px;
+}*/
+#loup1bl{
+	background-image: url(../img/lightloup1.png);
+	height: 310px;
+	width: 311px;
+	position: absolute;
+	top: 120px;
+	right: 0;
+}
+#container2bl{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 110px;
+}
+#light2{
+	background: url(../img/light2.png) no-repeat;
+	height:766px;
+	position: relative;
+	margin: auto;
+}
+#text2bl{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #7c6b01;
+}
+
+#loup2bl{
+	background-image: url(../img/lightloup2.png);
+	height: 178px;
+	width: 179px;
+	position: absolute;
+	top: 135px;
+	left: 40px;
+}
+#loup3bl{
+	background-image: url(../img/lightloup3.png);
+	height: 215px;
+	width: 216px;
+	position: absolute;
+	top: 400px;
+	left: 230px;
+}
+#loup4bl{
+	background-image: url(../img/lightloup4.png);
+	height: 212px;
+	width: 213px;
+	position: absolute;
+	top: 150px;
+	left: 900px;
+}
+#container3bl{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+}
+#light3{
+	background: url(../img/light3.png) no-repeat;
+	height:553px;
+	position: relative;
+	margin-left: 70px;
+	background-position: left;
+}
+#text3bl{
+	text-align: justify;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #7c6b01;
+	width: 400px;
+}
+#borderrightbl{
+	border-right: 5px solid #7c6b01;
+	margin: 0;
+	padding: 0 30px;
+}
+/*free space*/
+
+#backgroundfree{
+	background-image: url(../img/backgroundfree.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1fs{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+	margin-top: 85px;
+}
+#free1{
+	background: url(../img/free1.png) no-repeat;
+	position: relative;
+	height: 557px;
+	background-position: right;	
+}
+#textfs{
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #5a6a00;
+	width: 450px;
+	text-align: justify;
+}
+#titlefs{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #665400;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #97b200;
+}
+/*#borderleftfs{
+	border-left: 5px solid #7c6b01;
+	margin: 0;
+	padding: 0 30px;
+}*/
+#loup1fs{
+	background-image: url(../img/freeloup1.png);
+	height: 312px;
+	width: 313px;
+	position: absolute;
+	top: 57px;
+	right: 0;
+}
+#container2fs{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+}
+#free2{
+	background: url(../img/free2.png) no-repeat;
+	position: relative;
+	height:1291px;
+	background-position: 50%;
+}
+#text2fs{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #5a6a00;
+}
+
+#loup2fs{
+	background-image: url(../img/freeloup2.png);
+	height: 276px;
+	width: 277px;
+	position: absolute;
+	top: 60px;
+	left: 245px;
+}
+#loup3fs{
+	background-image: url(../img/freeloup3.png);
+	height: 368px;
+	width: 369px;
+	position: absolute;
+	top: 230px;
+	right: 20px;
+}
+
+/*rusvikup*/
+
+#backgroundvikup{
+	background-image: url(../img/backgroundvikup.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1v {
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	margin-top: 85px;
+	padding: 90px;
+}
+#vikup1{
+	position: relative;
+	/* top: 0; */
+	background: url(../img/vikup1.png) no-repeat;
+	height: 546px;
+	background-position: right;	
+}
+#textv, #textv1 {
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #2e4487;
+}
+
+#textv {
+	width: 450px;
+}
+
+#textv1 {
+	width: 250px;
+}
+
+
+#titlev{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #665400;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #2e4487;
+}
+/*#borderleftv{
+	border-left: 5px solid #7c6b01;
+	margin: 0;
+	padding: 0 30px;
+}*/
+#loup1v{
+	position: absolute;
+	background-image: url(../img/vikuploup1.png);
+	height: 293px;
+	width: 294px;
+	top: 212px; 
+	left: 420px;
+}
+#container2v{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+}
+#vikup2{
+	position: relative;
+	background: url(../img/vikup2.png) no-repeat;
+	height:866px;
+	margin-left: 70px;
+}
+
+#text2v{
+	text-align: justify;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #2e4487;
+	width: 450px;
+}
+
+#loup2v{
+	position: absolute;
+	background-image: url(../img/vikuploup2.png);
+	height: 251px;
+	width: 252px;
+	top: 320px;
+	left: -60px;
+}
+#loup3v{
+	background-image: url(../img/vikuploup3.png);
+	height: 295px;
+	width: 296px;
+	position: absolute;
+	top: 390px;
+	left:670px;
+}
+
+/*noxit*/
+
+#backgroundn{
+	background-image: url(../img/backgroundnox.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1n{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 90px;
+	margin-top: 85px;
+}
+#nox1{
+	background: url(../img/nox1.png) no-repeat;
+	height: 557px;
+	background-position: right;
+	position: relative;
+}
+#textn{
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #aa3733;
+	width: 400px;
+	text-align: justify;
+}
+#titlen{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #3c3300;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #aa3733;
+}
+/*#borderleftbm{
+	border-left: 5px solid #5d4d76;
+	margin: 0;
+	padding: 0 30px;
+}*/
+
+#loup1n{
+	background-image: url(../img/noxloup1.png);
+	height: 212px;
+	width: 213px;
+	position: absolute;
+	top: 300px;
+	right: 320px;
+}
+#container2n{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+}
+#nox2{
+	background: url(../img/nox2.png) no-repeat;
+	margin-left: 70px;
+	height: 781px;
+	position: relative;
+}
+
+#loup2n{
+	background-image: url(../img/noxloup2.png);
+	height: 229px;
+	width: 230px;
+	position: absolute;
+	top: -30px;
+	left: 70px;
+}
+#loup3n{
+	background-image: url(../img/noxloup3.png);
+	height: 197px;
+	width: 198px;
+	position: absolute;
+	top: 530px;
+	left: 500px;
+}
+#container3n{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 110px;
+}
+#nox3{
+	background: url(../img/nox3.png) no-repeat;
+	height:672px;
+	position: relative;
+	margin: auto;
+	background-position: 50% 0;
+}
+#text3n{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #aa3733;
+}
+
+/*proactiveweb*/
+
+#backgroundpro{
+	background-image: url(../img/backgroundpro.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1pro {
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	margin-top: 85px;
+	padding: 90px;
+}
+#pro1{
+	position: relative;
+	/* top: 0; */
+	background: url(../img/pro1.png) no-repeat;
+	height: 546px;
+	background-position: right;	
+}
+#textpro, #text1pro {
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #359444;
+	text-align: justify;
+}
+
+#textpro {
+	width: 450px;
+}
+
+#text1pro {
+	width: 350px;
+}
+
+#titlepro{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #665400;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #359444;
+}
+#loup1pro{
+	position: absolute;
+	background-image: url(../img/proloup1.png);
+	height: 250px;
+	width: 251px;
+	top: 200px; 
+	left: 440px;
+}
+#container2pro{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 50px;
+}
+#pro2{
+	position: relative;
+	background: url(../img/pro2.png) no-repeat;
+	height:1140px;
+	margin: auto;
+	background-position: 50% 0;
+}
+#text2pro{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #359444;
+}
+
+#loup2pro{
+	position: absolute;
+	background-image: url(../img/proloup2.png);
+	height: 288px;
+	width: 289px;
+	top: 230px;
+	left: 70px;
+}
+#loup3pro{
+	background-image: url(../img/proloup3.png);
+	height: 290px;
+	width: 291px;
+	position: absolute;
+	top: 590px;
+	left:790px;
+}
+/*wedding*/
+
+#backgroundwedding{
+	background-image: url(../img/backgroundwedding.png);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container1w {
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	margin-top: 85px;
+	padding: 90px;
+}
+#wedding1{
+	position: relative;
+	/* top: 0; */
+	background: url(../img/wedding1.png) no-repeat;
+	height: 546px;
+	background-position: right;	
+}
+#textw, #text1w {
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.2em;
+	font-weight: lighter;
+	color: #aa8f7c;
+	text-align: justify;
+}
+
+#textw {
+	width: 450px;
+}
+
+#text1w {
+	width: 350px;
+}
+
+#titlew{
+	font-family:'ralewayextrabold';
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #665400;
+	text-transform: uppercase; 
+	margin-bottom: 100px;
+	color: #aa8f7c;
+}
+#loup1w{
+	position: absolute;
+	background-image: url(../img/weddingloup1.png);
+	height: 253px;
+	width: 254px;
+	top: 100px; 
+	right: 0;
+}
+#container2w{
+	position: relative;
+	width: 1130px;
+	margin: auto;
+	padding: 50px;
+}
+#wedding2{
+	position: relative;
+	background: url(../img/wedding2.png) no-repeat;
+	height:1140px;
+	margin: auto;
+	background-position: 50% 0;
+}
+.text2w{
+	text-align: center;
+	font-family: 'ralewayregular';
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	line-height: 1.1em;
+	color: #aa8f7c;
+}
+
+#loup2w{
+	position: absolute;
+	background-image: url(../img/weddingloup2.png);
+	height: 262px;
+	width: 263px;
+	top: 430px;
+	left: 0;
+}
+#loup3w{
+	background-image: url(../img/weddingloup3.png);
+	height: 262px;
+	width: 263px;
+	position: absolute;
+	top: 370px;
+	left:563px;
+}
+.textcontainer1{
+	position: absolute;
+	top: 50;
+}
+.textcontainer2{
+	position: absolute;
+	top: 90;
+	right: 70px;
+}
+.textcontainer3{
+	position: absolute;
+	top: 70;
+	bottom: 50px;
+}
+.textcontainer4{
+	position: absolute;
+	top: 0;
+	right: 70px;
+}
+.textcontainer6{
+	position: absolute;
+	top: 0;
+}
+.textcontainer7{
+	position: absolute;
+	top: 190;
+	right: 70px;
+}
