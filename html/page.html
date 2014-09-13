@@ -3,7 +3,8 @@
 	<meta charset="utf-8">
 	<title>Margarita Rodina</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="../js/min/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.blockscrollslider.js"></script>
     <script src="../js/margarita.js"></script>
 </head>
 <body>
@@ -19,15 +20,6 @@
 				</div>
 			</div>
 		</div>
-        <!-- mouse-->
-	    <div class="mouse">
-		    <div class="scroll">
-			    <img src="../img/mouse.png"></img>
-		    </div>
-		    <div class="scroll">
-			    <p class="scrolltext">keep scrolling</p>
-		    </div>
-	    </div>
 	</div>
 
 	<!-- background2 -->
@@ -39,15 +31,6 @@
 					<p>i decided to change my live</p>
 					<p><span class="low">and</span> dedicate it <span class="low">to a</span> web design</p>
 				</div>
-			</div>
-		</div>
-		<!-- mouse-->
-		<div class="mouse">
-			<div class="scroll">
-				<img src="../img/mouse.png"></img>
-			</div>
-			<div class="scroll">
-				<p class="scrolltext">keep scrolling</p>
 			</div>
 		</div>
 	</div>
@@ -68,17 +51,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<!-- mouse-->
-		<div class="mouse">
-			<div class="scroll">
-				<img src="../img/mouse.png"></img>
-			</div>
-			<div class="scroll">
-				<p class="scrolltext">keep scrolling</p>
-			</div>
-		</div>
 	</div>
+
 
 	<!-- background4 -->
 	<div id="background4" class="about slide">
@@ -89,20 +63,10 @@
 				</div>
 			</div>
 		</div>
-		
-		<!-- mouse-->
-		<div class="mouse">
-			<div class="scroll">
-				<img src="../img/mouse.png"></img>
-			</div>
-			<div class="scroll">
-				<p class="scrolltext">keep scrolling</p>
-			</div>
-		</div>
 	</div>
 
 	<!-- works -->
-	<div id="backgroundworks" class="slide">
+	<div id="backgroundworks" class="works slide">
 		<div id="container">
 			<div class="work">
 				<img src="../img/noxpas.png" class="work-img" data-hover-src="../img/noxact.jpg">
@@ -168,16 +132,15 @@
 			</div>
 			<div>
 				<ul id="menu">
-					<li><a class="wordhover" href="http://noxit.ru/rodina_md">about</a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="wordhover" href="http://noxit.ru/rodina_md/works">works</a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
-					<li><a class="wordhover" href="http://noxit.ru/rodina_md/contacts">contacts</a></li>
-					<li><a class="circle" href="http://noxit.ru/rodina_md/contacts"></a></li>
+					<li><a class="wordhover menu-about" href="">about</a></li>
+					<li><a data-index="0" class="circle menu-about-circle" href=""></a></li>
+					<li><a data-index="1" class="circle menu-about-circle" href=""></a></li>
+					<li><a data-index="2" class="circle menu-about-circle" href=""></a></li>
+					<li><a data-index="3" class="circle menu-about-circle" href=""></a></li>
+					<li><a class="wordhover menu-works" href="">works</a></li>
+					<li><a data-index="4" class="circle menu-works-circle" href=""></a></li>
+					<li><a class="wordhover menu-contacts" href="">contacts</a></li>
+					<li><a data-index="5" class="circle menu-contacts-circle" href=""></a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
