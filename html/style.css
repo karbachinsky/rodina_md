@@ -57,6 +57,10 @@ body {
 }
 
 
+img {
+    border: 0;
+}
+
 .slide {
     position: fixed;
     top: 0;
@@ -72,7 +76,6 @@ body {
 #background1 {
     background-image: url(../img/background.png);
 	height: 100%;
-    z-index: 110;
 	/* display: none; */
 }
 #slide1{
@@ -92,7 +95,6 @@ body {
 #background2 {
 	background-image: url(../img/background2.png);
 	height: 100%;
-    z-index: 109;
 	/* display: none; */
 }
 #slide2{
@@ -112,13 +114,11 @@ body {
 #background3 {
 	background-image: url(../img/background3.png);
 	height: 100%;
-    z-index: 108;
 }
 
 #background5 {
 	background-image: url(../img/background3.png);
 	height: 100%;
-    z-index: 106;
 }
 
 #slide3{
@@ -138,7 +138,6 @@ body {
 #background4{
 	background-image: url(../img/background4.png);
 	height: 100%;
-    z-index: 107;
 }
 #slide4{
 	height: 100%;
@@ -199,12 +198,11 @@ body {
 	background-image: url(../img/backgroundworks.png);
 	min-height: 100%;
 	background-attachment: fixed;
-    z-index: 105;
 }
 #container{
 	width: 66%;
-	margin: 0 auto;
-	padding: 30px;
+	margin: 50px auto;
+    text-align: center;
 }
 .description {
 	position: absolute;
@@ -233,18 +231,11 @@ body {
 	margin: 0 15%;
 	padding-bottom: 6%;
 }
-/*
+
+
 .work{
-	width: 33%;
-	height:408px;
-	margin: 0;
-	padding: 10px;
-	display: inline;
-}
-*/
-.work{
-	float: left;
-	width: 31.17%;
+	display: inline-block;
+	width: 30%;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid #fff;
@@ -493,6 +484,13 @@ body {
 	color: #d6dbe0;
 	font: 1.5em 'ralewaysemibold';
 }
+
+.accent-black{
+	text-transform: uppercase;
+	color: black;
+	font: 1.5em 'ralewaysemibold';
+}
+
 .smalltext{
 	font: 0.8em 'ralewaylight';
 	text-transform: lowercase;
@@ -1236,6 +1234,7 @@ body {
 	border-bottom: 5px solid #94889b;
 	margin: 0;
 	z-index: 10000;
+    display: none;
 }
 .lefttextf{
 	position: absolute;
@@ -1576,6 +1575,7 @@ body {
 #backgroundcontacts {
 	background-image: url(../img/backgroundcontacts.png);
 	height: 100%;
+    width: 100%;
 }
 #device5{
 	height: 361px;
@@ -1603,6 +1603,11 @@ body {
 	line-height: 3em;
 	font-weight: lighter; 
 }
+
+.contact-text-header {
+    vertical-align: top;
+}
+
 #mail{
 	border: 2px solid #007bb6;
 	padding: 10px;
