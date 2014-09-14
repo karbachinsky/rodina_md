@@ -215,8 +215,19 @@
             var $background = $block;
             var $scaleBlock = $background.find(".device");
 
-            var blockCurrentHeight = $scaleBlock.height();
-            var blockCurrentWidth = $scaleBlock.width();
+            var blockCurrentHeight, blockCurrentWidth;
+            if ($scaleBlock.data("height")) {
+                blockCurrentHeight = $scaleBlock.data("height");
+                blockCurrentWidth = $scaleBlock.data("width");
+            }
+            else {
+                blockCurrentHeight = $scaleBlock.height();
+                blockCurrentWidth = $scaleBlock.width();
+                $scaleBlock.attr({
+                    height: blockCurrentHeight,
+                    width: blockCurrentWidth
+                })
+            }
 
             var bg_img_height = $background.find(".background-img").height();
 
@@ -241,9 +252,6 @@
                 "font-size": parseInt(k * parseFloat($textSection.css("font-size"))) + "px",
                 "top": parseInt(k * parseInt($textSection.css("top"))) + "px"
             });
-
-            $scaleBlock.attr("data-initial-height", blockNewHeight);
-
         };
 
 
