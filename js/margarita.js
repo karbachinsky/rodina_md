@@ -23,6 +23,7 @@
                 $(".menu-contacts").addClass('active');
                 $(".menu-contacts-circle").addClass('circle-active');
             }
+
         };
 
         /**
@@ -182,6 +183,18 @@
         };
 
 
+        var keepScrollig = function() {
+            var mouse = $(".mouse");
+            mouse.show();
+            mouse.animate({opacity: 1}, 500);
+
+            $(window).scroll(function(e){
+                mouse.animate({opacity: 0}, 500, function() {
+                    $(this).hide();
+                });
+            });
+        }
+
         var slider = $('.slide').blockScrollSlider({
             changeSlideCallback: menuActivateSlide,
             initialZIndex: 110
@@ -189,5 +202,6 @@
 
         menu(slider);
         works(slider);
+        keepScrollig();
     });
 })(jQuery);

@@ -182,7 +182,7 @@ img {
 	line-height: 3em;
 	font-weight: lighter; 
 }
-.accent{
+.accent {
 	font-size: 1.60em;
 	font-weight: bold;
 }
@@ -370,10 +370,16 @@ img {
 	clear: both;
 }
 .mouse{
-	position: absolute;
-	width: 15%;
+    display: none;
+    opacity: 0;
+	position: fixed;
+	width: 350px;
+    text-align: center;
+    margin-left: -175px;
 	bottom: 20%;
-	margin: 0 auto;
+    left: 50%;
+	/* margin-left: -150px;*/
+    z-index: 200;
 }
 .scrolltext{
 	font-family: 'ralewaylight';
