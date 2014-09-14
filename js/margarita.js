@@ -206,11 +206,67 @@
             });
         }
 
+
+        var backgroundResizer = function($block) {
+            //return;
+            // background #1
+            var $background = $block;
+            var $scaleBlock = $background.find(".device");
+
+            var blockCurrentHeight = $scaleBlock.height();
+            var blockCurrentWidth = $scaleBlock.width();
+
+            var bg_img_height = $background.find(".background-img").height();
+
+            var k = parseFloat(bg_img_height) / $scaleBlock.data("initial-height");
+
+            var blockNewHeight = parseInt(k * blockCurrentHeight);
+            var blockNewWidth = parseInt(k * blockCurrentWidth);
+
+            var newTop = parseInt(k * parseInt($scaleBlock.css("top")));
+
+            $scaleBlock.css({
+                "margin-left": parseInt(-(blockNewWidth)/2) + "px",
+                "width": blockNewWidth + "px",
+                "height": blockNewHeight + "px",
+                "top": newTop + "px"
+            });
+
+            var $textSection = $scaleBlock.find(".text-section");
+            console.log($textSection.offset().top, k, $block.attr("id"), parseInt($textSection.css("top")));
+
+            $textSection.css({
+                "font-size": parseInt(k * parseFloat($textSection.css("font-size"))) + "px",
+                "top": parseInt(k * parseInt($textSection.css("top"))) + "px"
+            });
+        };
+
+
         var slider = $('.slide').blockScrollSlider({
             changeSlideCallback: menuActivateSlide,
             initialZIndex: 110
         });
 
+
+        function resizeAllBlocks() {
+            // Scaling each block with image
+            var blocks = ["#background1", "#background2", "#background3", "#background4"];
+            for (var i=0; i<blocks.length; ++i) {
+                var $block = $(blocks[i]);
+
+                (function($block){
+                    $block.find(".background-img").load(function() {
+                         backgroundResizer($block);
+                    });
+                })($block);
+            }
+        }
+
+        $(window).resize(function() {
+            resizeAllBlocks();
+        });
+
+        resizeAllBlocks();
         menu(slider);
         works(slider);
         keepScrollig();

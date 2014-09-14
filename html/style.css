@@ -79,38 +79,45 @@ img {
 	/* display: none; */
 }
 
+.device-img {
+    width: 100%;
+}
+
 .background-img {
     display: block;
     margin: 0 auto;
     height: 100%;
 }
 
-#device1{
-	height: 456px;
-	width: 530px;
-	background: url(../img/mac.png) no-repeat 50% 40%;
+.device{
 	position: absolute;
-	top: 100px;
 	left: 50%;
-	margin-left: -265px;
+    margin: 0 auto;
 	padding: 0;
 }
+
+.device1 {
+    top: 180px;
+}
+
+.device2 {
+    top: 240px;
+}
+
+.device3 {
+    top: 110px;
+}
+
+.device4 {
+    top:350px;
+}
+
 #background2 {
 	background-image: url(../img/background2.png);
 	height: 100%;
 	/* display: none; */
 }
 
-#device2{
-	height: 344px;
-	width: 570px;
-	background: url(../img/tele.png) no-repeat 50% 40%;
-	position: absolute;
-	top: 200px;
-	left: 50%;
-	margin-left: -280px;
-	padding: 0;
-}
 #background3 {
 	background-image: url(../img/background3.png);
 	height: 100%;
@@ -120,38 +127,24 @@ img {
 	background-image: url(../img/background3.png);
 	height: 100%;
 }
-#device3{
-	height: 623px;
-	width: 934px;
-	background: url(../img/canvas.png) no-repeat 50% 40%;
-	position: absolute;
-	top: 62px;
-	left: 50%;
-	margin-left: -468px;
-	padding: 0;
-}
+
 #background4{
 	background-image: url(../img/background4.png);
 	height: 100%;
 }
 
-#device4{
-	height: 359px;
-	width: 584px;
-	background: url(../img/macbook.png) no-repeat 50% 40%;
-	position: absolute;
-	top: 250px;
-	left: 50%;
-	margin-left: -292px;
-	padding: 0;
-}
 #big{
 	font-size: 1.75em;
-	margin-top: 125px;
 }
+
+p {
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
 #skills{
 	list-style:none;
-	padding: 20px;
+	padding: 0.2em;
 	margin: 0;
 }
 #skills li{
@@ -162,11 +155,10 @@ img {
 }
 
 .text-section {
-	position: relative;
+	position: absolute;
 	text-align: center;
-	margin-top: 73px;
+    width: 100%;
 	font-family: 'ralewaylight';
-	z-index: 100;
 	font-size: 1em;
 	text-transform: uppercase; 
 	letter-spacing: 0.175em;
@@ -174,6 +166,20 @@ img {
 	line-height: 3em;
 	font-weight: lighter; 
 }
+
+.text-section1 {
+    top: 85px;
+}
+.text-section2 {
+    top: 50px;
+}
+.text-section3 {
+    top: 35px;
+}
+.text-section4 {
+    top: 100px;
+}
+
 .accent {
 	font-size: 1.60em;
 	font-weight: bold;
