@@ -242,6 +242,20 @@ img {
 	margin: 1%;
 	min-width: 250px;
 }
+#details{
+	background-color: #910035;
+	position: absolute;
+	font-family: 'ralewaylight';
+	font-size: 1.5em;
+	text-transform: uppercase; 
+	letter-spacing: 0.175em;
+	text-align: center;
+	line-height: 3em;
+	font-weight: lighter;
+	color: #fff;
+	width: 80%;
+	height: 20%;
+}
 
 
 /*
@@ -369,6 +383,7 @@ img {
 	float: left;
 	padding: 4%;
 }
+
 
 
 /* all works open*/
