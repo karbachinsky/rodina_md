@@ -78,16 +78,19 @@ img {
 	height: 100%;
 	/* display: none; */
 }
-#slide1{
-	height: 100%;
-	background: url(../img/table.png) no-repeat 50% 0;
+
+.background-img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
 }
+
 #device1{
 	height: 456px;
 	width: 530px;
 	background: url(../img/mac.png) no-repeat 50% 40%;
 	position: absolute;
-	top: 200px;
+	top: 100px;
 	left: 50%;
 	margin-left: -265px;
 	padding: 0;
@@ -97,16 +100,13 @@ img {
 	height: 100%;
 	/* display: none; */
 }
-#slide2{
-	height: 100%;
-	background: url(../img/rack.png) no-repeat 50% 0;
-}
+
 #device2{
 	height: 344px;
 	width: 570px;
 	background: url(../img/tele.png) no-repeat 50% 40%;
 	position: absolute;
-	top: 240px;
+	top: 200px;
 	left: 50%;
 	margin-left: -280px;
 	padding: 0;
@@ -119,11 +119,6 @@ img {
 #background5 {
 	background-image: url(../img/background3.png);
 	height: 100%;
-}
-
-#slide3{
-	height: 100%;
-	background: url(../img/cinema.png) no-repeat 50% 0;
 }
 #device3{
 	height: 623px;
@@ -139,16 +134,13 @@ img {
 	background-image: url(../img/background4.png);
 	height: 100%;
 }
-#slide4{
-	height: 100%;
-	background: url(../img/sofa.png) no-repeat 50% 0;
-}
+
 #device4{
 	height: 359px;
 	width: 584px;
 	background: url(../img/macbook.png) no-repeat 50% 40%;
 	position: absolute;
-	top: 340px;
+	top: 250px;
 	left: 50%;
 	margin-left: -292px;
 	padding: 0;
@@ -466,9 +458,17 @@ img {
 .righttext a{
 	color: #506d88;
 	display:block;
-	padding:0px 0px 0px 60px;
 	text-decoration:none;
 }
+
+.righttext .prev {
+    padding: 0 30 0 0;
+}
+
+.righttext .next {
+    padding: 0 0 0 30px;
+}
+
 .righttext a:hover{
 	color: #000;
 	font-family:'ralewayregular';

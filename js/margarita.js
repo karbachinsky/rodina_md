@@ -185,10 +185,21 @@
 
         var keepScrollig = function() {
             var mouse = $(".mouse");
-            mouse.show();
-            mouse.animate({opacity: 1}, 500);
+
+            function _show_mouse() {
+                mouse.show();
+                mouse.animate({opacity: 1}, 500);
+            }
+
+            if (50 >= $(window).scrollTop())
+                _show_mouse();
 
             $(window).scroll(function(e){
+                if (50 >= $(window).scrollTop()) {
+                    _show_mouse();
+                    return;
+                }
+
                 mouse.animate({opacity: 0}, 500, function() {
                     $(this).hide();
                 });
