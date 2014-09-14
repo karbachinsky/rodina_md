@@ -194,11 +194,13 @@
             if (50 >= $(window).scrollTop())
                 _show_mouse();
 
+
             $(window).scroll(function(e){
-                if (50 >= $(window).scrollTop()) {
+                /*if (50 >= $(window).scrollTop()) {
                     _show_mouse();
                     return;
                 }
+                */
 
                 mouse.animate({opacity: 0}, 500, function() {
                     $(this).hide();
@@ -219,6 +221,7 @@
             var bg_img_height = $background.find(".background-img").height();
 
             var k = parseFloat(bg_img_height) / $scaleBlock.data("initial-height");
+            console.log(k);
 
             var blockNewHeight = parseInt(k * blockCurrentHeight);
             var blockNewWidth = parseInt(k * blockCurrentWidth);
@@ -233,12 +236,14 @@
             });
 
             var $textSection = $scaleBlock.find(".text-section");
-            console.log($textSection.offset().top, k, $block.attr("id"), parseInt($textSection.css("top")));
 
             $textSection.css({
                 "font-size": parseInt(k * parseFloat($textSection.css("font-size"))) + "px",
                 "top": parseInt(k * parseInt($textSection.css("top"))) + "px"
             });
+
+            $scaleBlock.attr("data-initial-height", blockNewHeight);
+
         };
 
 
@@ -248,12 +253,12 @@
         });
 
 
+        var blocks = ["#background1", "#background2", "#background3", "#background4", "#backgroundcontacts"];
+
         function resizeAllBlocks() {
             // Scaling each block with image
-            var blocks = ["#background1", "#background2", "#background3", "#background4"];
             for (var i=0; i<blocks.length; ++i) {
                 var $block = $(blocks[i]);
-
                 (function($block){
                     $block.find(".background-img").load(function() {
                          backgroundResizer($block);
@@ -263,7 +268,9 @@
         }
 
         $(window).resize(function() {
-            resizeAllBlocks();
+            for (var i=0; i<blocks.length; ++i) {
+                backgroundResizer($(blocks[i]));
+            }
         });
 
         resizeAllBlocks();
