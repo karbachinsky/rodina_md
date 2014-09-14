@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/jquery.blockscrollslider.js"></script>
+    <script src="../js/jquery.jcarousel-core.min.js"></script>
     <script src="../js/margarita.js"></script>
 </head>
 <body>
@@ -74,8 +75,7 @@
 					<p class="line">noxit</p>
 					<p class="textlight">Web studio Template</p>
 				</div>
-				<div id="details"> details
-				</div>
+				<div class="details"><span>details</span></div>
 			</div>
 
 			
@@ -85,6 +85,7 @@
 					<p class="line">jellysnail</p>
 					<p class="textlight">First e-shop Experience</p>
 				</div>
+				<div class="details"><span>details</span></div>
 			</div>
 			
 			<div class="work" data-hover-color="#97b200">
@@ -93,6 +94,7 @@
 					<p class="line">freespace</p>
 					<p><span class="textlight">Art school Template</p>
 				</div>
+				<div class="details"><span>details</span></div>
 			</div>
 			
 			<div class="work" data-hover-color="#ceb202">
@@ -101,6 +103,7 @@
 					<p class="line">be ready <span class="textlight">light</span></p>
 					<p><span class="textlight">Batch application page</p>
 				</div>
+                <div class="details"><span>details</span></div>
 			</div>
 			
 			<div class="work" data-hover-color="#5d4d76">
@@ -108,6 +111,7 @@
 				<div class="description">
 					<p class="line">be ready <span class="textlight">middle</span></p>
 				</div>
+				<div class="details"><span>details</span></div>
 			</div>
 			
 			<div class="work" data-hover-color="#2e4487">
@@ -115,6 +119,7 @@
 				<div class="description">
 					<p class="line">rusvikup</p>
 				</div>
+				<div class="details"><span>details</span></div>
 			</div>
 
 			<div class="clear"></div>
@@ -163,403 +168,294 @@
 	</div>
 
 
-<div class="invisible">	
-	<!-- workspages--
-	
+    <div id="headercontainer">
+        <p><a class="lefttext back-to-works" href="">back to works</a></p>
+        <ul class="righttext">
+           <li><a class="prev" href="" class="wordhover">prev</a></li>
+           <li><a class="next" href="" class="wordhover">next</a></li>
+        </ul>
+    </div>
 
-<div class="invisible">
-	<div id="headercontainerm">
-		<p><a class="lefttext">back to works</a></p>
-		<ul class="righttext">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
+    <!-- workspages -->
 
-	<!--middle-->
-	
-	<div id="backgroundcolorm1">
-		<div id="containerm1">
-			<p class="title">be ready middle /<span class="smalltext">web design, logotype</span></p>
-			<div id="shadowm1"></div>
-			<div id="middle1"></div>
-		</div>
-	</div>
-	<div class="textcontainer1">
-		<p class="accent">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
+    <div class="works-full">
+    <ul>
+        <!--nox-->
+        <li class="work-full" data-color="#7a4343">
+                <div class="b-work-plate">
+                    <div class="b-nox-bg1"></div>
+                    <p class="title">noxit /<span class="smalltext">web design</span></p>
+                    <img src="../img/nox1.png" class="b-work-img-screen b-nox-shadow-right" align="center"/>
 
-	<div id="containerm2">
-		<div id="shadowm2"></div>
-		<div id="middle2"></div>
-	</div>
-	<div id="backgroundcolorm2"></div>
-	<div class="textcontainer2">
-		<p class="accent">function</p>
-		<p>Site contains a built-in simulation of such an action 
-			and reflects the progress of the proposed software.
-		</p>
-	</div>
-	<div id="containerm3">
-		<div id="shadowm3"></div>
-		<div id="middle3"></div>
-	</div>
-	<div class="textcontainer1">
-		<p class="accent">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
-	<div id="containerm4">
-		<div id="shadowm4"></div>
-		<div id="middle4"></div>
-	</div>
-	<div id="backgroundcolorm3"></div>
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>
-	
-	
-<div class="invisible">	
-	<!--header 2-->
-	
-	<div id="headercontainerl">
-		<p><a class="lefttextl">back to works</a></p>
-		<ul class="righttextl">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
+                    <div class="b-work-text b-nox-text">
+                        <p class="accent">description</p>
+                        <p>Website represents package software for the collection and processing
+                            of statistical information received by companies in the course
+                            of carrying out of competitions and promotions using special
+                            codes and pictures on the packaging of products.
+                        </p>
+                    </div>
+                </div>
+                <div class="b-work-plate">
+                    <div class="b-nox-bg2"></div>
+                    <img src="../img/nox2.png" class="b-work-img-screen b-nox-shadow-left" align="center"/>
+                    <div class="b-work-text b-work-text-white">
+                        <p class="accent">advantages</p>
+                        <p>Site contains a built-in simulation of such an action
+                            and reflects the progress of the proposed software.
+                        </p>
+                    </div>
+                    <img src="../img/nox3.png" class="b-work-img-screen b-nox-shadow-right" align="center"/>
+                    <div class="b-work-text b-nox-text">
+                        <p class="accent">description</p>
+                        <p>Website represents package software for the collection and processing
+                            of statistical information received by companies in the course
+                            of carrying out of competitions and promotions using special
+                            codes and pictures on the packaging of products.
+                        </p>
+                    </div>
+                </div>
+                <div class="b-work-plate">
+                    <div class="b-nox-bg3"></div>
+                    <img src="../img/nox4.png" class="b-work-img-screen b-nox-shadow-left" align="center"/>
+                    <div class="b-work-text b-work-text-white">
+                        <p class="smalltext">Made for Interactive Services
+                        </p>
+                    </div>
+                </div>
+        </li>
 
-	<!--little-->
-	
-	<div id="backgroundcolorl1">
-		<div id="containerl1">
-			<p class="title">be ready middle /<span class="smalltext">web design, logotype</span></p>
-			<div id="shadowl1"></div>
-			<div id="light1"></div>
-		</div>
-	</div>
-	<div class="textcontainer1l">
-		<p class="accentl">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
+        <!--pro-->
+        <li class="work-full" data-color="#6d8270">
+            <div class="b-work-plate">
+                <div class="b-pro-bg1"></div>
+                <p class="title">proactivweb /<span class="smalltext">web design</span></p>
+                <img src="../img/pro1.png" class="b-work-img-screen b-pro-shadow-right" align="center"/>
 
-	<div id="containerl2">
-		<div id="shadowl2"></div>
-		<div id="light2"></div>
-	</div>
-	<div id="backgroundcolorl2"></div>
-	<div class="textcontainer2">
-		<p class="accentl">advantages</p>
-		<p>Site contains a built-in simulation of such an action 
-			and reflects the progress of the proposed software.
-		</p>
-	</div>
-	<div id="containerl3">
-		<div id="shadowl3"></div>
-		<div id="light3"></div>
-	</div>
-	<div class="textcontainer1l">
-		<p class="accentl">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
-	<div id="containerl4">
-		<div id="shadowl4"></div>
-		<div id="light4"></div>
-	</div>
-	<div id="backgroundcolorl3"></div>
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>	
+                <div class="b-work-text b-pro-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                       of statistical information received by companies in the course
+                       of carrying out of competitions and promotions using special
+                       codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
+            <div class="b-work-plate">
+                <div class="b-pro-bg2"></div>
+                <img src="../img/pro2.png" class="b-work-img-screen b-pro-shadow-left" align="center"/>
 
-<div class="invisible">
-		<!--header 3-->
-	
-	<div id="headercontainern">
-		<p><a class="lefttextn">back to works</a></p>
-		<ul class="righttextn">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
 
-	<!--nox-->
-	
-	<div id="backgroundcolorn1">
-		<div id="containern1">
-			<p class="title">noxit /<span class="smalltext">web design</span></p>
-			<div id="shadown1"></div>
-			<div id="nox1"></div>
-		</div>
-	</div>
-	<div class="textcontainernl">
-		<p class="accentn">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
+        <!--free-->
+        <li class="work-full" data-color="#94889b">
+            <div class="b-work-plate">
+                <div class="b-free-bg1"></div>
+                <p class="title">freespace /<span class="smalltext">web design</span></p>
+                <img src="../img/free1.png" class="b-work-img-screen b-free-shadow-right" align="center"/>
 
-	<div id="containern2">
-		<div id="shadown2"></div>
-		<div id="nox2"></div>
-	</div>
-	<div id="backgroundcolorn2"></div>
-	<div class="textcontainer2">
-		<p class="accentn">advantages</p>
-		<p>Site contains a built-in simulation of such an action 
-			and reflects the progress of the proposed software.
-		</p>
-	</div>
-	<div id="containern3">
-		<div id="shadown3"></div>
-		<div id="nox3"></div>
-	</div>
-	<div class="textcontainernl">
-		<p class="accentn">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
-	<div id="containern4">
-		<div id="shadown4"></div>
-		<div id="nox4"></div>
-	</div>
-	<div id="backgroundcolorn3"></div>
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>	
+                <div class="b-work-text b-free-text">
+                    <p class="accent">description</p>
+                    <p>Landing page for art school.  All these information comes as blocks,
+                    standing one after another, so, the page doesn't looks overwhelming.
+                    </p>
+                </div>
+            </div>
 
+            <div class="b-work-plate">
+                <div class="b-free-bg2"></div>
+                <img src="../img/free2.png" class="b-work-img-screen b-free-shadow-left" align="center"/>
 
+                <div class="b-work-text b-work-text-white">
+                    <p class="accent">functions</p>
+                    <p>Site contains a built-in simulation of such an action
+                        and reflects the progress of the proposed software.
+                    </p>
+                </div>
+                <img src="../img/free3.png" class="b-work-img-screen b-free-shadow-right" align="center"/>
+                <div class="b-work-text b-free-text">
+                    <p class="accent">functions2</p>
+                    <p>Site contains a built-in simulation of such an action
+                        and reflects the progress of the proposed software.
+                    </p>
+                </div>
+            </div>
 
-	<!--header 4-->
-<div class="invisible">	
+            <div class="b-work-plate">
+                <div class="b-free-bg3"></div>
+                <img src="../img/free4.png" class="b-work-img-screen b-free-shadow-left" align="center"/>
 
-	<div id="headercontainerp">
-		<p><a class="lefttextp">back to works</a></p>
-		<ul class="righttextp">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
 
-	<!--pro-->
+        <!-- beready light -->
+        <li class="work-full" data-color="#97997c">
+            <div class="b-work-plate">
+                <div class="b-light-bg1"></div>
+                <p class="title">be ready light /<span class="smalltext">web design, logotype</span></p>
+                <img src="../img/light1.png" class="b-work-img-screen b-light-shadow-right" align="center"/>
 
-	<div id="backgroundcolorp1">
-		<div id="containerp1">
-			<p class="title">proactivweb /<span class="smalltext">web design</span></p>
-			<div id="shadowp1"></div>
-			<div id="pro1"></div>
-		</div>
-	</div>
-	<div class="textcontainerpl">
-		<p class="accentp">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
+                <div class="b-work-text b-light-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
 
-	<div id="containerp2">
-		<div id="shadowp2"></div>
-		<div id="pro2"></div>
-	</div>
-	<div id="backgroundcolorp2"></div>
-	
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>
+            <div class="b-work-plate">
+                <div class="b-light-bg2"></div>
+                <img src="../img/light2.png" class="b-work-img-screen b-light-shadow-left" align="center"/>
 
+                <div class="b-work-text b-work-text-white">
+                    <p class="accent">advantages</p>
+                    <p>Site contains a built-in simulation of such an action
+                        and reflects the progress of the proposed software.
+                    </p>
+                </div>
+                <img src="../img/light3.png" class="b-work-img-screen b-light-shadow-right" align="center"/>
+                <div class="b-work-text b-light-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
 
+            <div class="b-work-plate">
+                <div class="b-light-bg3"></div>
+                <img src="../img/light4.png" class="b-work-img-screen b-light-shadow-left" align="center"/>
 
-<!--header 5-->
-<div class="invisible">	
-	<div id="headercontainerp">
-		<p><a class="lefttextp">back to works</a></p>
-		<ul class="righttextp">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
 
-	<!--vikup-->
+        <!-- breeady middle-->
+        <li class="work-full" data-color="#506d88">
+           <div class="b-work-plate">
+                <div class="b-middle-bg1"></div>
+                <p class="title">be ready middle /<span class="smalltext">web design, logotype</span></p>
+                <img src="../img/middle1.png" class="b-work-img-screen b-middle-shadow-right" align="center"/>
 
-	<div id="backgroundcolorv1">
-		<div id="containerv1">
-			<p class="title">rusvikup /<span class="smalltext">web design</span></p>
-			<div id="shadowv1"></div>
-			<div id="vikup1"></div>
-		</div>
-	</div>
-	<div class="textcontainervl">
-		<p class="accentp">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
+                <div class="b-work-text b-middle-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
 
-	<div id="containerv2">
-		<div id="shadowv2"></div>
-		<div id="vikup2"></div>
-	</div>
-	<div id="backgroundcolorv2"></div>
-	
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-	
-</div>
+            <div class="b-work-plate">
+                <div class="b-middle-bg2"></div>
+                <img src="../img/middle2.png" class="b-work-img-screen b-middle-shadow-left" align="center"/>
 
+                <div class="b-work-text b-work-text-white">
+                    <p class="accent">function</p>
+                    <p>Site contains a built-in simulation of such an action
+                        and reflects the progress of the proposed software.
+                    </p>
+                </div>
+                <img src="../img/middle3.png" class="b-work-img-screen b-middle-shadow-right" align="center"/>
+                <div class="b-work-text b-light-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
 
+            <div class="b-work-plate">
+                <div class="b-middle-bg3"></div>
+                <img src="../img/middle4.png" class="b-work-img-screen b-middle-shadow-left" align="center"/>
 
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
 
-	<!--header6 -->
-<div class="invisible">
-	<div id="headercontainerf">
-		<p><a class="lefttextf">back to works</a></p>
-		<ul class="righttextf">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
+        <!--vikup-->
+        <li class="work-full" data-color="#59777f">
+            <div class="b-work-plate">
+                <div class="b-vikup-bg1"></div>
+                <p class="title">rusvikup /<span class="smalltext">web design</span></p>
+                <img src="../img/vikup1.png" class="b-work-img-screen b-vikup-shadow-right" align="center"/>
+
+                <div class="b-work-text b-vikup-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
+            <div class="b-work-plate">
+                <div class="b-vikup-bg2"></div>
+                <img src="../img/vikup2.png" class="b-work-img-screen b-vikup-shadow-left" align="center"/>
+
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
+
+        <!--wedding-->
+        <li class="work-full" data-color="#8f7e6c">
+            <div class="b-work-plate">
+                <div class="b-wedding-bg1"></div>
+                <p class="title">wedding agency /<span class="smalltext">web design</span></p>
+                <img src="../img/wedding1.png" class="b-work-img-screen" align="center"/>
+
+                <div class="b-work-text b-wedding-text">
+                    <p class="accent">description</p>
+                    <p>Website represents package software for the collection and processing
+                        of statistical information received by companies in the course
+                        of carrying out of competitions and promotions using special
+                        codes and pictures on the packaging of products.
+                    </p>
+                </div>
+            </div>
+            <div class="b-work-plate">
+                <div class="b-wedding-bg2"></div>
+                <img src="../img/wedding2.png" class="b-work-img-screen b-wedding-shadow-left" align="center"/>
+
+                <div class="b-work-text b-work-text-white">
+                    <p class="accent">functions</p>
+                    <p>Site contains a built-in simulation of such an action
+                       and reflects the progress of the proposed software.
+                    </p>
+                </div>
+            </div>
+            <div class="b-work-plate">
+                <img src="../img/wedding3.png" class="b-work-img-screen b-wedding-shadow-right" align="center"/>
+
+                <div class="b-work-text b-work-text-white">
+                    <p class="smalltext">Made for Interactive Services</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+    <!-- /works-full -->
 	</div>
 
-	<!--free-->
-	
-	<div id="backgroundcolorf1">
-		<div id="containern1">
-			<p class="title">freespace /<span class="smalltext">web design</span></p>
-			<div id="shadowf1"></div>
-			<div id="free1"></div>
-		</div>
-	</div>
-	<div class="textcontainerfl">
-		<p class="accentf">description</p>
-		<p>Landing page for art school.  All these information comes as blocks, 
-		standing one after another, so, the page doesn't looks overwhelming.
-		</p>
-	</div>
-
-	<div id="containerf2">
-		<div id="shadowf2"></div>
-		<div id="free2"></div>
-	</div>
-	<div id="backgroundcolorf2"></div>
-	<div class="textcontainer2">
-		<p class="accentf">funktions</p>
-		<p>Site contains a built-in simulation of such an action 
-			and reflects the progress of the proposed software.
-		</p>
-	</div>
-	<div id="containerf3">
-		<div id="shadowf3"></div>
-		<div id="free3"></div>
-	</div>
-	<div class="textcontainerfl">
-		<p class="accentf">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
-	<div id="containerf4">
-		<div id="shadowf4"></div>
-		<div id="free4"></div>
-	</div>
-	<div id="backgroundcolorf3"></div>
-	<div class="textcontainer2">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>
-
-
-	<!--header7-->
-	
-<div class="invisible">	
-
-	<div id="headercontainerw">
-		<p><a class="lefttextw">back to works</a></p>
-		<ul class="righttextw">
-			<li><a class="wordhover">prev</a></li>
-			<li><a class="wordhover">next</a></li>
-		</ul>
-	</div>
-
-	<!--wedding-->
-	
-	<div id="backgroundcolorw1">
-		<div id="containerw1">
-			<p class="title">wedding agency /<span class="smalltext">web design</span></p>
-			<!--<div id="shadoww1"></div>-->
-			<div id="wedding1"></div>
-		</div>
-	</div>
-	<div class="textcontainerwl">
-		<p class="accentw">description</p>
-		<p>Website represents package software for the collection and processing 
-			of statistical information received by companies in the course 
-			of carrying out of competitions and promotions using special 
-			codes and pictures on the packaging of products.
-		</p>
-	</div>
-
-	<div id="containerw2">
-		<div id="shadoww2"></div>
-		<div id="wedding2"></div>
-	</div>
-	<div id="backgroundcolorw2"></div>
-	<div class="textcontainer2">
-		<p class="accentw">funktions</p>
-		<p>Site contains a built-in simulation of such an action 
-			and reflects the progress of the proposed software.
-		</p>
-	</div>
-	<div id="containerw3">
-		<div id="shadoww3"></div>
-		<div id="wedding3"></div>
-	</div>
-	<div class="textcontainer1">
-		<p class="smalltext">Made for Interactive Services
-		</p>
-	</div>
-</div>	
-	
-</div>	
-	
-	
-
-	
 </body>
 </html>
