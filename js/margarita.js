@@ -54,12 +54,16 @@
                 var img = $(this).find("img");
                 var new_src = img.data("hover-src");
                 img.attr("src", new_src);
+
+                $(this).find(".description").hide();
             });
 
             $(".work").on("mouseout", function() {
                 var img = $(this).find("img");
                 var new_src = img.data("initial-src");
                 img.attr("src", new_src);
+
+                $(this).find(".description").show();
             });
 
 

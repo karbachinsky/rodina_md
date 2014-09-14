@@ -241,6 +241,7 @@ img {
 	border: 1px solid #fff;
 	margin: 1%;
 	min-width: 250px;
+    cursor: pointer;
 }
 #details{
 	background-color: #910035;
