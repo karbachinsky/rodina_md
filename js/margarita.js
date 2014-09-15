@@ -117,6 +117,15 @@
 
                 // coloring menu
                 var $work = getWorkByIndex(current_work_index);
+
+                $work.find("img").each(function(){
+                    var fakeSrc = $(this).attr("fsrc");
+                    if (fakeSrc) {
+                        $(this).attr("src", fakeSrc);
+                        $(this).removeAttr("fsrc");
+                    }
+                });
+
                 var color = $work.data("color");
 
                 $("#headercontainer").css({
