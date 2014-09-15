@@ -227,13 +227,11 @@
 
 
         var backgroundResizer = function($block) {
-
-            //return;
-            // background #1
-            var $background = $block;
-            var $scaleBlock = $background.find(".device");
-
+            var $device = $block.find(".device");
+            var $background = $block.find(".background-img");
+            var $textSection = $device.find(".text-section");
             // Scale background for mobiles
+            /*
             if ($(window).height() > $(window).width()) {
                 $background.find(".background-img").css({
                     width: "100%"
@@ -248,42 +246,60 @@
             $background.css({
                 'height': $background.find(".background-img").height()
             });
+            */
 
-            var blockCurrentHeight, blockCurrentWidth;
-            if ($scaleBlock.data("height")) {
-                blockCurrentHeight = $scaleBlock.data("height");
-                blockCurrentWidth = $scaleBlock.data("width");
+
+            /*if ($device.data("height")) {
+                blockCurrentHeight = $device.data("height");
+                blockCurrentWidth = $device.data("width");
             }
             else {
-                blockCurrentHeight = $scaleBlock.height();
-                blockCurrentWidth = $scaleBlock.width();
-                $scaleBlock.attr({
-                    height: blockCurrentHeight,
-                    width: blockCurrentWidth
+            */
+            var deviceOriginalHeight, deviceOriginalWidth, deviceOriginalTop, deviceOriginalFontSize, deviceOriginalFontTop;
+            if (!$device.data("height")) {
+                deviceOriginalHeight = $device.height();
+                deviceOriginalWidth = $device.width();
+                deviceOriginalTop = parseInt($device.css("top"));
+
+                deviceOriginalFontSize = parseFloat($textSection.css("font-size"))
+                deviceOriginalFontTop = parseInt($textSection.css("top"));
+
+                $device.attr({
+                    "data-height": deviceOriginalHeight,
+                    "data-width": deviceOriginalWidth,
+                    "data-top": deviceOriginalTop,
+                    "data-font-size": deviceOriginalFontSize,
+                    "data-font-top": deviceOriginalFontTop
                 })
             }
+            else {
+                deviceOriginalHeight = $device.data("height");
+                deviceOriginalWidth = $device.data("width");
+                deviceOriginalTop = $device.data("top");
+                deviceOriginalFontSize = $device.data("font-size");
+                deviceOriginalFontTop = $device.data("font-top");
+            }
+            //background.css({height: "100%"});
+            var bgImgHeight = $background.height();
 
-            var bg_img_height = $background.find(".background-img").height();
+            var k = parseFloat(bgImgHeight) / $device.data("initial-height");
+            console.log(deviceOriginalHeight, k);
 
-            var k = parseFloat(bg_img_height) / $scaleBlock.data("initial-height");
+            var blockNewHeight = parseInt(k * deviceOriginalHeight);
+            var blockNewWidth = parseInt(k * deviceOriginalWidth);
 
-            var blockNewHeight = parseInt(k * blockCurrentHeight);
-            var blockNewWidth = parseInt(k * blockCurrentWidth);
+            var newTop = parseInt(k * deviceOriginalTop);
 
-            var newTop = parseInt(k * parseInt($scaleBlock.css("top")));
-
-            $scaleBlock.css({
+            $device.css({
                 "margin-left": parseInt(-(blockNewWidth)/2) + "px",
                 "width": blockNewWidth + "px",
                 "height": blockNewHeight + "px",
                 "top": newTop + "px"
             });
 
-            var $textSection = $scaleBlock.find(".text-section");
-
             $textSection.css({
-                "font-size": parseInt(k * parseFloat($textSection.css("font-size"))) + "px",
-                "top": parseInt(k * parseInt($textSection.css("top"))) + "px"
+                "font-size": parseInt(k * deviceOriginalFontSize) + "px",
+                "top": parseInt(k * deviceOriginalFontTop) + "px"
             });
         };
 
