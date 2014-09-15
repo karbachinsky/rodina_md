@@ -123,7 +123,7 @@
     BlockScrollSlider.prototype.scrollTo = function(i) {
         var self = this;
 
-        $(window).scrollTop(self.slidesAbsPositions[ i ]);
+        $("body").animate({scrollTop: self.slidesAbsPositions[ i ]}, 500);
     };
 
     /**
