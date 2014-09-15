@@ -161,13 +161,21 @@
                 slideToWork($next_work.index());
             }
 
-            $(".work-full").css({
-                width: $(window).width() + "px"
+            function setWorksSLiderWidth(){
+                $(".work-full").css({
+                    width: $(window).width() + "px"
+                });
+
+                $(".works-full ul").css({
+                    width: ($(".work-full").length * $(window).width()) + "px"
+                });
+            }
+            setWorksSLiderWidth();
+            $(window).on('resize', function() {
+                setWorksSLiderWidth();
+                slideToWork(current_work_index);
             });
 
-            $(".works-full ul").css({
-                width: ($(".work-full").length * $(window).width()) + "px"
-            });
 
             $("#headercontainer .back-to-works").on("click", function(e) {
                e.preventDefault();
@@ -219,10 +227,27 @@
 
 
         var backgroundResizer = function($block) {
+
             //return;
             // background #1
             var $background = $block;
             var $scaleBlock = $background.find(".device");
+
+            // Scale background for mobiles
+            if ($(window).height() > $(window).width()) {
+                $background.find(".background-img").css({
+                    width: "100%"
+                });
+            }
+            else {
+                $background.find(".background-img").css({
+                    height: "100%"
+                });
+            }
+
+            $background.css({
+                'height': $background.find(".background-img").height()
+            });
 
             var blockCurrentHeight, blockCurrentWidth;
             if ($scaleBlock.data("height")) {
@@ -241,7 +266,6 @@
             var bg_img_height = $background.find(".background-img").height();
 
             var k = parseFloat(bg_img_height) / $scaleBlock.data("initial-height");
-            console.log(k);
 
             var blockNewHeight = parseInt(k * blockCurrentHeight);
             var blockNewWidth = parseInt(k * blockCurrentWidth);
