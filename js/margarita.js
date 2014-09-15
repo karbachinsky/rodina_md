@@ -277,9 +277,14 @@
             for (var i=0; i<blocks.length; ++i) {
                 var $block = $(blocks[i]);
                 (function($block){
+                    imagesLoaded($block.find("img") , function( instance ) {
+                        backgroundResizer($block);
+                    });
+                    /*
                     $block.find(".background-img").load(function() {
                          backgroundResizer($block);
                     });
+                    */
                 })($block);
             }
         }
