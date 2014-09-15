@@ -303,41 +303,31 @@
             });
         };
 
-
-        var slider = $('.slide').blockScrollSlider({
-            changeSlideCallback: menuActivateSlide,
-            initialZIndex: 110
-        });
-
-
         var blocks = ["#background1", "#background2", "#background3", "#background4", "#backgroundcontacts"];
 
-        function resizeAllBlocks() {
-            // Scaling each block with image
+        function resizeAllBlocks2() {
             for (var i=0; i<blocks.length; ++i) {
-                var $block = $(blocks[i]);
-                (function($block){
-                    imagesLoaded($block.find("img") , function( instance ) {
-                        backgroundResizer($block);
-                    });
-                    /*
-                    $block.find(".background-img").load(function() {
-                         backgroundResizer($block);
-                    });
-                    */
-                })($block);
+                backgroundResizer($(blocks[i]));
             }
         }
 
         $(window).resize(function() {
-            for (var i=0; i<blocks.length; ++i) {
-                backgroundResizer($(blocks[i]));
-            }
+            resizeAllBlocks2();
         });
 
-        resizeAllBlocks();
-        menu(slider);
-        works(slider);
-        keepScrollig();
+        imagesLoaded($("body").find("img"), function() {
+            resizeAllBlocks2()
+
+            var slider = $('.slide').blockScrollSlider({
+                changeSlideCallback: menuActivateSlide,
+                initialZIndex: 110
+            });
+
+            menu(slider);
+            works(slider);
+            keepScrollig();
+
+            $(".loading").remove();
+        });
     });
 })(jQuery);

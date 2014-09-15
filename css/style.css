@@ -109,7 +109,7 @@ img {
 }
 
 .device4 {
-    top:250px;
+    top: 250px;
 }
 .device5 {
     top: 230px;
@@ -875,7 +875,7 @@ p {
 #backgroundcontacts {
 	background-image: url(../img/backgroundcontacts.png);
 	height: 100%;
-    width: 100%;
+    width:100%;
 }
 
 #linkedin{
@@ -891,4 +891,36 @@ p {
 #mail{
 	padding: 10px;
 	text-decoration: none;
+}
+
+.loading {
+    position: absolute;
+    z-index: 400;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.loading-content {
+    vertical-align: middle;
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 20%;
+	text-align: center;
+	font-family: 'ralewaylight';
+	font-size: 4em;
+	text-transform: uppercase;
+	letter-spacing: 0.175em;
+	font-weight: lighter;
+    color: white;
+}
+
+.loading-content p, .loading-content img {
+    float: left;
+    padding: 0;
+}
+
+.loading-content p {
+    margin-left: 30px;
 }
