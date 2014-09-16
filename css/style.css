@@ -192,12 +192,18 @@ p {
 	font-size: 1.60em;
 	font-weight: bold;
 }
+
 .low{
 	text-transform: lowercase;
 }
 .smalltext{
 	text-transform: lowercase;
 	font-size: 0.8em;
+}
+.smalltextb{
+	text-transform: lowercase;
+	font-size: 0.8em;
+	color: black;
 }
 #backgroundworks{
 	background-image: url(../img/backgroundworks.png);
@@ -555,6 +561,54 @@ p {
 	font: 1.5em 'ralewaysemibold';
 	padding-bottom: 30px;
 }
+.accentrdc{
+	text-transform: uppercase;
+	color: #dbe7ec;
+	font: 1.5em 'ralewaysemibold';
+	padding-bottom: 30px;
+}
+
+/*vk*/
+
+.b-vk-bg1 {
+    background-color: #015c65;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+}
+
+.b-vk-bg2 {
+    background-color: #015c65;
+    width: 100%;
+    height: 1550px;
+    position: absolute;
+    top: 1900px;
+}
+
+.b-vk-bg3 {
+    background-color: #015c65;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+}
+
+.b-vk-shadow-right {
+    -webkit-box-shadow: 20px 20px 0px 0px #d7e2e3;
+    -moz-box-shadow:    20px 20px 0px 0px #d7e2e3;
+    box-shadow:         20px 20px 0px 0px #d7e2e3;
+}
+
+.b-vk-shadow-left {
+    -webkit-box-shadow: -20px -20px 00px 0px #d7e2e3;
+    -moz-box-shadow:    -20px -20px 00px 0px #d7e2e3;
+    box-shadow:         -20px -20px 00px 0px #d7e2e3;
+}
+
+.b-vk-text{
+	color: #015c65;
+}
 
 /*nox*/
 
@@ -569,9 +623,9 @@ p {
 .b-nox-bg2 {
     background-color: #7a4343;
     width: 100%;
-    height: 1150px;
+    height: 1000px;
     position: absolute;
-    top: 950px;
+    top: 1100px;
 }
 
 .b-nox-bg3 {
@@ -602,7 +656,7 @@ p {
 .b-pro-bg1 {
     background-color: #6d8270;
     width: 100%;
-    height: 650px;
+    height: 700px;
     position: absolute;
     top: 0;
 }
@@ -828,46 +882,40 @@ p {
 	color: #5d5d79;
 }
 
-/*vk*/
 
-.b-vk-bg1 {
-    background-color: #015c65;
+/*rdc*/
+
+.b-rdc-bg1 {
+    background-color: #004058;
     width: 100%;
-    height: 800px;
+    height: 750px;
     position: absolute;
     top: 0;
 }
 
-.b-vk-bg2 {
-    background-color: #015c65;
+.b-rdc-bg2 {
+    background-color: #004058;
     width: 100%;
-    height: 1550px;
+    height: 3150px;
     position: absolute;
-    top: 1900px;
+    top: 1050px;
 }
 
-.b-vk-bg3 {
-    background-color: #015c65;
-    width: 100%;
-    height: 350px;
-    position: absolute;
-    bottom: 0;
+
+.b-rdc-shadow-right {
+    -webkit-box-shadow: 20px 20px 0px 0px #dbe7ec;
+    -moz-box-shadow:    20px 20px 0px 0px #dbe7ec;
+    box-shadow:         20px 20px 0px 0px #dbe7ec;
 }
 
-.b-vk-shadow-right {
-    -webkit-box-shadow: 20px 20px 0px 0px #d7e2e3;
-    -moz-box-shadow:    20px 20px 0px 0px #d7e2e3;
-    box-shadow:         20px 20px 0px 0px #d7e2e3;
+.b-rdc-shadow-left {
+    -webkit-box-shadow: -20px -20px 00px 0px #dbe7ec;
+    -moz-box-shadow:    -20px -20px 00px 0px #dbe7ec;
+    box-shadow:         -20px -20px 00px 0px #dbe7ec;
 }
 
-.b-vk-shadow-left {
-    -webkit-box-shadow: -20px -20px 00px 0px #d7e2e3;
-    -moz-box-shadow:    -20px -20px 00px 0px #d7e2e3;
-    box-shadow:         -20px -20px 00px 0px #d7e2e3;
-}
-
-.b-vk-text{
-	color: #015c65;
+.b-rdc-text{
+	color: #004058;
 }
 
 /* contacts*/
