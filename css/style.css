@@ -567,6 +567,18 @@ p {
 	font: 1.5em 'ralewaysemibold';
 	padding-bottom: 30px;
 }
+.accentkeep{
+	text-transform: uppercase;
+	color: #f3e5d4;
+	font: 1.5em 'ralewaysemibold';
+	padding-bottom: 30px;
+}
+.accentspace{
+	text-transform: uppercase;
+	color: #deede5;
+	font: 1.5em 'ralewaysemibold';
+	padding-bottom: 30px;
+}
 
 /*vk*/
 
@@ -608,6 +620,40 @@ p {
 
 .b-vk-text{
 	color: #015c65;
+}
+
+/*keep*/
+
+.b-keep-bg1 {
+    background-color: #b76a05;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+}
+
+.b-keep-bg2 {
+    background-color: #b76a05;
+    width: 100%;
+    height: 1550px;
+    position: absolute;
+    top: 1900px;
+}
+
+.b-keep-shadow-right {
+    -webkit-box-shadow: 20px 20px 0px 0px #f3e5d4;
+    -moz-box-shadow:    20px 20px 0px 0px #f3e5d4;
+    box-shadow:         20px 20px 0px 0px #f3e5d4;
+}
+
+.b-keep-shadow-left {
+    -webkit-box-shadow: -20px -20px 00px 0px #f3e5d4;
+    -moz-box-shadow:    -20px -20px 00px 0px #f3e5d4;
+    box-shadow:         -20px -20px 00px 0px #f3e5d4;
+}
+
+.b-keep-text{
+	color: #b76a05;
 }
 
 /*nox*/
@@ -683,6 +729,25 @@ p {
 
 .b-pro-text{
 	color: #6d8270;
+}
+
+/*space*/
+.b-space-bg1 {
+    background-color: #607873;
+    width: 100%;
+    height: 696px;
+    position: absolute;
+    top: 0;
+}
+
+.b-space-shadow-right {
+    -webkit-box-shadow: 20px 20px 0px 0px #deede5;
+    -moz-box-shadow:    20px 20px 0px 0px #deede5;
+    box-shadow:         20px 20px 0px 0px #deede5;
+}
+
+.b-space-text{
+	color: #607873;
 }
 
 /*vikup*/
